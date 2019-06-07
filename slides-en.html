@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Canada Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Takes care of CSS3 prefixes -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body class="en" data-duration="360">
+
+  <main>
+<!--Slide 1-->
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/teenslc-logo-stacked-white.png" alt="Teens Learning Code logo">Welcome!</h1>
+
+      <div class="instructions">
+        <h2>Get <br>Connected</h2>
+        <p><strong>Wifi:</strong> wifi network</p>
+        <p><strong>Password:</strong> wifi password</p>
+        <hr>
+
+        <h2>Complete this survey before we begin</h2>
+        <p><a href="http://bit.ly/teensurveyclc">http://bit.ly/teensurveyclc</a></p>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Content created by <a href="https://5hel2l2y.github.io/">Sherry Yang</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.ca" property="cc:attributionName" rel="cc:attributionURL">Canada Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+
+<!--Slide 2-->
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/teenslc-logo-stacked-white.png" alt="Ladies Learning Code logo">Getting Started</h1>
+
+      <div class="instructions">
+        <h2>Download<br> & Install</h2>
+          <p>Learner files (zip file): <a href="https://github.com/ladieslearningcode/teenslc-arduino/archive/master.zip">bit.ly/teenslc-arduino</a>
+            <ul>
+              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+              <li>open <em>slides-en.html</em> in the browser to view the slides</li>
+            </ul>
+          </p>
+    </div>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Content created by <a href="https://5hel2l2y.github.io/">Sherry Yang</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Canada Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+
+<!--Slide 3-->
+    <section class="slide intro">
+      <img class="logo" src="framework/img/teenslc-logo-white.png" alt="Canada Learning Code logo">
+      <h1 class="heading-bg">
+        <span>
+          Intro to Hardware<br> with Arduino
+        </span>
+      </h1>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23teenslearningcode&src=typd">#teenslearningcode</a></li>
+      </ul>
+
+      <!-- FILL IN INSTRUCTOR DETAILS -->
+      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
+      <h2><span class="cursive">with</span> Instructor Name</h2>
+      <ul>
+        <li><a href="mailto:">hello@email.com</a></li>
+        <li><a href="http://website.com">website.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <div class="sponsor">
+        <!--<p>In partnership with<br> <img src="framework/img/logo-white.svg" alt="name"></p>-->
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Canada Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+
+<!--Slide 4-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Introductions
+      </script>
+    </section>
+
+<!--Slide 5-->
+    <section class= "slide" data-markdown>
+      <script type="text/template">
+        #Agenda
+
+        Intro to Arduino
+
+        Intro to Circuit
+
+        Arduino Programming
+
+        Challenges
+
+      </script>
+    </section>
+
+<!--Slide 6-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+       ![Coders Code Banner](framework/img/workshop/scroll.png)
+         ## 1. Be friendly &amp; welcoming
+         ## 2. Be respectful of others
+         ## 3. Ask questions
+         ## 4. Be present
+         ## 5. Try your best!
+
+      </script>
+    </section>
+
+<!--Slide 7-->
+    <section class="slide title" data-toc data-markdown>
+     <script type="text/template">
+       # What is Code?
+     </script>
+    </section>
+
+<!--Slide 8-->
+    <section class="slide" data-markdown>
+     <script type= "text/template">
+       #Code is..
+       ## A SET OF INSTRUCTIONS THAT TELLS THE COMPUTER WHAT TO DO.
+
+       <br>
+       ![Running robot gif](framework/img/workshop/runningrobot.gif)
+       ![Dancing robot gif](framework/img/workshop/dancingrobot.gif)
+       ![eating robot gif](framework/img/workshop/eatingrobot.gif)
+       ![Dancing robot gif](framework/img/workshop/dancingrobot2.gif)
+       ![Dancing robot gif](framework/img/workshop/bluerobot.gif)
+       ![Dancing robot gif](framework/img/workshop/partyrobot.gif)
+
+       <p> In code, we call a set of instructions an <strong style="color:#FF584E;">algorithm</strong>.</p><!-- .element: class="delayed" -->
+
+     </script>
+    </section>
+
+<!--Slide 9-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Today's Project
+        ## We're learning how to build an <br>alarm system with Arduino
+      </script>
+    </section>
+
+<!--Slide 10-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Today's Project
+
+        ![example alarm system for your lunch](framework/img/workshop/tlc-alarm-system-scenario.gif)
+
+        [See full video on YouTube](https://youtu.be/Glbw1TH5tbc)
+      </script>
+    </section>
+
+<!--Slide 11-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # What is Arduino?
+      </script>
+    </section>
+
+<!--Slide 12-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Arduino
+
+        **Arduino** is an open source programmable circuit board that can be integrated into a wide variety of makerspace projects both simple and complex.
+
+        <img src="framework/img/workshop/tlc-arduino-uno.png" alt="Top and bottom view of an Arduino Uno.">
+      </script>
+    </section>
+
+<!--Slide 13-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Types of Arduino Boards
+
+        Arduino is open source, there are other alternatives such as Adafruit and Sparkfun Arduino boards made for specific use for various projects.
+
+        <img src="framework/img/workshop/tlc-various-ardurino-boards.png" alt="Top view of a LilyPad Arduino, Arduino Pro Mini, Arduino Uno, Arduino Due, and Arduino Pro Micro">
+
+        Fun Fact:
+
+        * Arduino was introduced back in 2005 in Italy by Massimo Banzi as a way for non-engineers to have access to a low cost, simple tool for creating hardware projects. Only the official boards have Arduino in it’s name.
+      </script>
+    </section>
+
+<!--Slide 14-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        #Arduino Uno
+
+        * Legend
+          * ![The label number 1](framework/img/workshop/tlc-number-1.png)<!-- .element: width="25px" --> Reset Button
+          * ![The label number 3](framework/img/workshop/tlc-number-3.png)<!-- .element: width="25px" --> & ![The label number 14](framework/img/workshop/tlc-number-14.png)<!-- .element: width="25px" --> Ground Pin
+          * ![The label number 4](framework/img/workshop/tlc-number-4.png)<!-- .element: width="25px" --> & ![The label number 12](framework/img/workshop/tlc-number-12.png)<!-- .element: width="25px" --> & ![The label number 13](framework/img/workshop/tlc-number-13.png)<!-- .element: width="25px" --> Digital Input/Output
+          * ![The label number 6](framework/img/workshop/tlc-number-6.png)<!-- .element: width="25px" --> USB Connection
+          * ![The label number 7](framework/img/workshop/tlc-number-7.png)<!-- .element: width="25px" --> TX/RX
+          * ![The label number 8](framework/img/workshop/tlc-number-8.png)<!-- .element: width="25px" --> ATmega Microcontroller
+          * ![The label number 9](framework/img/workshop/tlc-number-9.png)<!-- .element: width="25px" --> Power LED Indicator
+          * ![The label number 11](framework/img/workshop/tlc-number-11.png)<!-- .element: width="25px" --> DC Power Barrel Jack
+        * ![Top view of a Arduino Uno with parts labelled with numbers](framework/img/workshop/tlc-arduino-uno-labelled.png)
+      </script>
+    </section>
+
+<!--Slide 15-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Circuit
+        ## What is a Circuit?
+      </script>
+    </section>
+
+<!--Slide 16-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Complete Circuit
+
+        An electric circuit is a path in which electrons from a voltage or current source flow.
+
+        ![A schematic with a battery on the left connected to a lightbulb on the right with a switch up top with the eletron flow going counterclockwise](framework/img/workshop/tlc-schematic-of-electron-flow.gif)
+
+        Circuit diagrams or schematics demonstrates the design of the electrical system.
+
+        ![A complex schematic example](framework/img/workshop/tlc-schematic-complicated.gif)
+      </script>
+    </section>
+
+<!--Slide 17-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Eletrical Circuit Diagrams
+
+        Fortunately, the maker space has becoming very easy to adapt.
+
+        Sources such as [Fritzing.org](http://fritzing.org) creates easy to understand electronic design tool for everyone.
+
+        ![A schematic example done by Fritzing.org](framework/img/workshop/tlc-fritzing-example.png)
+      </script>
+    </section>
+
+<!--Slide 18-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Circuit
+        ## What makes a circuit?
+      </script>
+    </section>
+
+<!--Slide 19-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Power Supply
+
+        There are three ways to power the Arduino board,
+
+        * 9V Power Supply
+        * USB to computer
+        * 9V Battery Pack
+
+        ![Top view of a 9V power supply, USB to computer cord, 9V battery pack](framework/img/workshop/tlc-various-power-sources.png)
+      </script>
+    </section>
+
+<!--Slide 20-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Let’s Power Up the Arduino
+
+        1. Plug in your Arduino Uno board to your computer using the USB to computer cord.
+        1. Make sure your computer recognize the device.
+        1. What colour is the power light when the board on?
+      </script>
+    </section>
+
+<!--Slide 21-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Breadboard
+
+        Breadboard is used for quick prototyping and to avoid permanent soldering.
+
+        The holes are called, **tie points** which is a plastic housing with metal clips that are connected with each other by strips of conductive materials.
+
+        The numbering helps to identify which pin is being connected on the Arduino board.
+
+        ![Left, top view of a breadboard; right, inside view of a breadboard with metal bars across each row](framework/img/workshop/tlc-breadboard-inside.jpg)
+
+        Fun Fact:
+
+        * In the early days of electronics, engineers would drive nails into breadboards, literally the boards that bread is cut on and then solder on the components.
+      </script>
+    </section>
+
+<!--Slide 22-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Jumper Wires
+
+        To power the breadboard, we use the jumper wires to form circuit by connecting various components together.
+
+        ![Jumper wires in various colours plugged into a breadboard](framework/img/workshop/tlc-jumper-wires.jpg)
+
+        The variety of colours allows you to colour code your circuits to avoid confusion.
+      </script>
+    </section>
+
+<!--Slide 23-->
+    <section class="slide two-col-list" data-toc data-markdown>
+      <script type="text/template">
+        # Resistors
+
+        * ![Resistors in various colours](framework/img/workshop/tlc-resistors.png)
+        * Resistors are electronic components which have a specific, never-changing electrical resistance. The resistor's resistance limits the flow of electrons through a circuit.  Resistor is measured in ohms Ω.
+
+
+        * ![A diagram explaingin what each colour means based on its location](framework/img/workshop/tlc-resistor-color-codes.png)
+        * Each colour on the resistor band represent a number which indicate their level of resistance.
+      </script>
+    </section>
+
+<!--Slide 24-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Output
+
+        Output is a gateway where power or information leaves a system.
+
+        LED lights are the simplest output source for an electrical system.
+
+        ![LED lights in various colours](framework/img/workshop/tlc-5mm-led-lights.jpg)
+
+        Buzzers create sound as a type of output when powered.
+
+        ![A generic buzzer](framework/img/workshop/tlc-piezo-element.jpeg)
+      </script>
+    </section>
+
+<!--Slide 25-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Follow this Circuit Diagram
+
+        ![Circuit Challenge #1](framework/img/workshop/tlc-circuit-challenge-1.png)
+      </script>
+    </section>
+
+<!--Slide 26-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Input
+
+        Input is a gateway where energy or information enters the system.
+
+        * Buttons and Switches
+          * Maintained (on/off) switches.
+          * Momentary buttons are only active when actuated (pushed).
+
+        ![A variety of input switch examples](framework/img/workshop/tlc-various-input-switches.png)
+      </script>
+    </section>
+
+<!--Slide 27-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # Input
+
+        * Sensors are also popular input sources.
+          * They are devices that detect and respond to some type of input from the physical environment.
+          * Example such as object range, motion, moisture, light, heat, and pressure.
+        * ![A variety of input sensor examples](framework/img/workshop/tlc-various-input-sensors.png)<!-- .element: width="70%" -->
+      </script>
+    </section>
+
+<!--Slide 28-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Follow this Circuit Diagram
+
+        ![Circuit Challenge #2](framework/img/workshop/tlc-circuit-challenge-2.png)
+      </script>
+    </section>
+
+<!--Slide 29-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Arduino Programming
+      </script>
+    </section>
+
+<!--Slide 30-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # Arduino Sketch
+
+        * So far,
+          * We’ve created a circuit with our hardware, not it’s time to program the board to recognize our setup.
+          * Arduino understands **sketch** which is a set of instructions that tells the board what to do.
+          * An Arduino board only understand one sketch at a time.
+        * ![An interface of the Arduino Sketch](framework/img/workshop/tlc-arduino-sketch-example.png)
+      </script>
+    </section>
+
+<!--Slide 31-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Arduino Software
+
+        Arduino has a dedicated Integrated Development Environment (IDE) to communicate with the board and upload your sketch.
+
+        This is a stand-alone software which you could work offline with.
+
+        * https://www.arduino.cc/en/Main/Software
+      </script>
+    </section>
+
+<!--Slide 32-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Arduino Web Editor
+
+        We’re going to work with the online version, Arduino Web Editor today.
+
+        * https://create.arduino.cc/editor
+
+        **Note**:  This is only Chrome and Firefox friendly at this time of the workshop.
+      </script>
+    </section>
+
+<!--Slide 33-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Set Up An Arduino Create Account
+
+        Step 1. URL: [https://create.arduino.cc/editor](https://create.arduino.cc/editor) (Chrome/Firefox)
+
+        ![Step #1 of Setup an Arduino Create Account](framework/img/workshop/tlc-arduino-create-account-1.png)
+      </script>
+    </section>
+
+<!--Slide 34-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Set Up An Arduino Create Account
+
+        Step 2. Sign in with Google or create a new account
+
+        ![Step #2 of Setup an Arduino Create Account](framework/img/workshop/tlc-arduino-create-account-2.png)
+      </script>
+    </section>
+
+<!--Slide 35-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Set Up An Arduino Create Account
+
+        Step 3. Install the plug-in
+
+        ![Step #3a of Setup an Arduino Create Account](framework/img/workshop/tlc-arduino-create-account-3a.png)
+        ![Step #3b of Setup an Arduino Create Account](framework/img/workshop/tlc-arduino-create-account-3b.png)
+        ![Step #3c of Setup an Arduino Create Account](framework/img/workshop/tlc-arduino-create-account-3c.png)
+        ![Step #3d of Setup an Arduino Create Account](framework/img/workshop/tlc-arduino-create-account-3d.png)
+        ![Step #3e of Setup an Arduino Create Account](framework/img/workshop/tlc-arduino-create-account-3e.png)
+      </script>
+    </section>
+
+<!--Slide 36-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Let’s Program Arduino!
+      </script>
+    </section>
+
+<!--Slide 37-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # C/C++ Programming
+
+        By default you will have,
+
+        ```c++
+        void setup() { 
+        }
+
+        void loop() { 
+        }
+        ```
+
+        `setup()` is a function with the return type as `void`, which means it does not return a value.  When you reset your Arduino or boot it up, the code within the setup function will run.
+
+        `loop()` is a loop function that will repeat itself, also with the return type as `void`.  Once the setup function is completed, the loop function will run over and over until the power is off.
+      </script>
+    </section>
+
+<!--Slide 38-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Pin Assignment
+
+        Before we start writing any instructions in the setup function, we need to assign our pins first.
+
+        ```c++
+        int ledPin = 9;
+        ```
+
+        We are assigning the LED pin as an integer 9.  Every time we use `ledPin` in our code, Arduino will interpret as 9.
+
+        **Question**: How do we assign the button pin?
+      </script>
+    </section>
+
+<!--Slide 39-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Pin Assignment - Complete
+
+        ```c++
+        int ledPin = 9;
+
+        int buttonPin = 7;
+        ```
+      </script>
+    </section>
+
+<!--Slide 40-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # setup()
+
+        Now we’re ready to have instructions in our `setup()` function.  We want to let Arduino know that pin 9 is a LED light and pin 7 is a button.  We will use the built-in function `pinMode(pin, mode)`
+
+        **Question**: What would be the pin and mode?
+
+        * Hint, see [documentation](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/).
+      </script>
+    </section>
+
+<!--Slide 41-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # setup() - Complete
+
+        ```c++
+        int ledPin = 9;
+
+        int buttonPin = 7;
+
+        void setup()
+        {
+          pinMode(ledPin, OUTPUT);
+          pinMode(buttonPin, INPUT);
+        }
+        ```
+
+        **Note**: `OUTPUT` and `INPUT` is capitalized because they are _reserved variables_ in Arduino Programming.
+      </script>
+    </section>
+
+<!--Slide 42-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # loop()
+
+        We’ve completed the `setup()` function, we will write some instructions for the `loop()` function.  Our goal is to have the LED light up when the button is pressed.
+
+        **Question**: What should be our first instruction?
+      </script>
+    </section>
+
+<!--Slide 43-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # loop() - Human Instructions
+
+        1. Read from the button pin.<!-- .element: class="delayed" -->
+        1. If the button pin is pressed, turn on the LED light.<!-- .element: class="delayed" -->
+        1. If the button pin is not pressed, turn off the LED light.<!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+<!--Slide 44-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # loop() - Pseudocode
+
+        Now that we have human instructions we can translate them to _pseudocode_, which is the _high-level_ description of the operating principle of a computer program.
+
+        We often put these in the comments of our code by typing `//` in the beginning of the line or with keyboard shortcut `command + /` for Mac, `Ctrl + /` for Windows.
+
+        ```c++
+        // Read from button pin
+
+        // If the button pin is pressed
+          // turn on the LED light
+
+        // If the button pin is not pressed
+          // turn off the LED light
+        ```
+
+        **Note**: Pseudocode usually only has one action per line.  The indentation here is intentional.
+      </script>
+    </section>
+
+<!--Slide 45-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # loop() - Read from Button pin
+
+        With the pseudocode we can start coding in our loop function using `digitalRead(pin)` and [`digitalWrite(pin, value)`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/).
+
+        ```c++
+        // Read from button pin
+        int button = digitalRead(buttonPin);
+        ```
+
+        According to the [documentation](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/), the digitalRead function returns the value `HIGH` or `LOW` which is _true_ or _false_.  In computer language, true is 1 and false is 0; therefore, button is an integer `int`.
+      </script>
+    </section>
+
+<!--Slide 46-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # loop() - Turn On the LED light
+
+        ```c++
+        // If the button pin is pressed
+        if (button == HIGH)
+        {
+          // turn on the LED light
+          digitalWrite(ledPin, HIGH);
+        }
+        ```
+
+        In C/C++ programming, `if` statement is the simplest form of flow control branching.
+
+        More reading in Statement and Flow Control, [http://www.cplusplus.com/doc/tutorial/control/](http://www.cplusplus.com/doc/tutorial/control/).
+
+        **Question**: Can you program the Arduino to _turn off_ the LED light when button is not pressed?
+      </script>
+    </section>
+
+<!--Slide 47-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # loop() - Turn Off the LED light
+
+        ```c++
+        // If the button pin is not pressed
+        if (button != HIGH)
+        {
+          // turn off the LED light
+          digitalWrite(ledPin, LOW);
+        }
+
+        ```
+
+        This code will compile and run, but it is not efficient.  Can we think of a way to improve our code?
+      </script>
+    </section>
+
+<!--Slide 48-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # loop() - if…else…
+
+        ```c++
+        // If the button pin is not pressed
+        else
+        {
+          // turn off the LED light
+          digitalWrite(ledPin, LOW);
+        }
+
+        ```
+
+        In this scenario we only have two possibilities; therefore, `if…else…` statement would be more efficient than two `if` statements.
+      </script>
+    </section>
+
+<!--Slide 49-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # We're Ready for Action!
+
+        Now that we’ve completed both the `setup()` function and `loop()` function, we are ready to compile our code and upload it to the Arduino board.
+
+        Let’s plug in our boards!
+      </script>
+    </section>
+
+<!--Slide 50-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # Compile Our Code
+
+        * Click the **Verify** button on the top and wait for the message “Done compiling.”
+        * ![Varify and compile the code within Arduino IDE](framework/img/workshop/tlc-arduino-ide-compiling.png)
+      </script>
+    </section>
+
+<!--Slide 51-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # Upload Our Code
+
+        * Click the **Upload** button on the top and wait for the message “Done uploading.”
+        * ![Upload the code within Arduino IDE](framework/img/workshop/tlc-arduino-ide-upload.png)
+      </script>
+    </section>
+
+<!--Slide 52-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # #LIT
+
+        ![LED light lit up with button press](framework/img/workshop/tlc-arduino-button-led.gif)
+
+        [See full video on YouTube](https://youtu.be/6vcuiHrDOA8)
+      </script>
+    </section>
+
+<!--Slide 53-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Challenge #1
+
+        Can we make our code more efficient?
+
+        ![Challenge #1 Answer](framework/img/workshop/tlc-challenge-1-ans.png)<!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+<!--Slide 54-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Challenge #2
+
+        Can we keep the light off on one button press?
+
+        ![Challenge #2 Answer](framework/img/workshop/tlc-challenge-2-ans.png)<!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+<!--Slide 55-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Challenge #3
+
+        Can we change our circuit to turn on the light on button press instead?
+
+        <p>Important: Power OFF your Arduino board first.</p><!-- .element: class="important-bg" -->
+
+        ![Challenge #3 Answer](framework/img/workshop/tlc-challenge-3-ans.png)<!-- .element: class="delayed" width="50%" -->
+      </script>
+    </section>
+
+<!--Slide 56-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # We now know,
+
+        * Arduino and different types of boards,<!-- .element: class="delayed" -->
+        * Create circuits with a power supply, a breadboard, jumper wires, a resistor, and an output source,<!-- .element: class="delayed" -->
+        * Using input source to trigger on and off of the system,<!-- .element: class="delayed" -->
+        * Arduino Programming!<!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+<!--Slide 57-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Lunch Time
+      </script>
+    </section>
+
+<!--Slide 58-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Problem of the Day
+        ## How might we use Arduino to improve safety?
+      </script>
+    </section>
+
+<!--Slide 59-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        ![Idea time](framework/img/workshop/tlc-idea-time.gif)
+      </script>
+    </section>
+
+<!--Slide 60-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Alarm System
+
+        ![example alarm system for your lunch](framework/img/workshop/tlc-alarm-system-scenario.gif)
+
+        [See full video on YouTube](https://youtu.be/Glbw1TH5tbc)
+      </script>
+    </section>
+
+<!--Slide 61-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # Materials - Hardware
+
+        * You will be given,
+          * 1 x Ultrasonic Range Finder
+          * 1 x Buzzer
+          * 1 x LED
+          * 1 x Battery Power
+          * 1 x Paper Bag
+          * Colour Crafting Paper
+          * Markers
+        * ![LED, Battery Power, Ultrasonic Range Finder, Buzzer](framework/img/workshop/tlc-alarm-system-hardware.png)
+      </script>
+    </section>
+
+<!--Slide 62-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # Materials - Code
+
+        * [http://bit.ly/clc-ardurino-alarm](http://bit.ly/clc-ardurino-alarm)
+        * ![LED, Battery Power, Ultrasonic Range Finder, Buzzer](framework/img/workshop/tlc-alarm-system-code.png)
+      </script>
+    </section>
+
+<!--Slide 63-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Final Challenge
+
+        1. Break into teams of 3 to 4.
+        1. Collect the materials needed for your alarm system.
+        1. Appoint one Hardware Engineer.
+          * Works with the circuit directly.
+          <p>Important: Power OFF your Arduino board first.</p><!-- .element: class="important-bg" -->
+        1. Appoint one Software Engineer.
+          * Works with the code directly.
+        1. Appoint one Product Designer.
+          * Works with the final design concept.
+        1. Make the circuit complete and create an alarm system in disguise.
+
+        **Note**: Team work makes dream work!
+      </script>
+    </section>
+
+<!--Slide 64-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # 10 Minutes!
+      </script>
+    </section>
+
+<!--Slide 65-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Time's Up!
+      </script>
+    </section>
+
+<!--Slide 66-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Demo Time
+      </script>
+    </section>
+
+<!--Slide 67 -->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Final Challenge - Circuit Diagram
+
+        ![Final Challenge answer as a circuit diagram](framework/img/workshop/tlc-alarm-system-circuit-diagram.png)
+      </script>
+    </section>
+
+<!--Slide 56-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Today I Learned...
+
+        <p><strong>I can</strong> identify different types of Arduino boards.</p><!-- .element: class="delayed" -->
+        <p><strong>I can</strong> create circuits with a power supply, a breadboard, jumper wires, a resistor, and an output source.</p><!-- .element: class="delayed" -->
+        <p><strong>I can</strong> use an input source to trigger on and off of a hardware system.</p><!-- .element: class="delayed" -->
+        <p><strong>I can</strong> program in C++ to create an Arduino sketch.</p><!-- .element: class="delayed" -->
+        <p><strong>I can</strong> optimize code.</p><!-- .element: class="delayed" -->
+        <p><strong>I can</strong> combine hardware and software together to create a tool.</p><!-- .element: class="delayed" -->
+        <p><strong>I can</strong> contribute to a team!</p><!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+<!--Slide 56-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Next Steps
+
+        Explore these fun projects!
+
+        * [Music Reactive Desk Lamp](https://www.instructables.com/id/Music-Reactive-Desk-Lamp/)
+        * [Environmental Alert System](https://www.instructables.com/id/Environmental-Alert-System/)
+        * [Arduino Laser Harp](https://www.instructables.com/id/Arduino-Laser-Harp-1/)
+      </script>
+    </section>
+
+<!-- Last slide -->
+    <section class="slide last">
+      <h1>Thank you!</h1>
+      <h2 class="heading-bg">
+        <span>
+          Intro to Hardware<br> with Arduino
+        </span>
+      </h2>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23teenslearningcode&src=typd">#teenslearningcode</a></li>
+      </ul>
+
+      <!-- FILL IN INSTRUCTOR DETAILS -->
+      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
+      <h2><span class="cursive">with</span> Instructor Name</h2>
+      <ul>
+        <li><a href="mailto:">hello@email.com</a></li>
+        <li><a href="http://website.com">website.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <p class="attribution">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- cls main section -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Grabs all the .snippet elements
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+
+</body>
+</html>

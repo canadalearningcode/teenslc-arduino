@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Canada Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Takes care of CSS3 prefixes -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body class="en" data-duration="360">
+
+
+  <main>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        ##Instructor Notes
+
+        ##Teens Learning Code: Intro to Hardware with Arduino
+        <br>
+
+        #Schedule
+
+        **Intro (30 min):** Intro, Agenda, Coders' Code, What is Code, Today's Project
+
+        **Intro to Hardware (1 hour):** What is Arduino, Circuit, Hardware, Follow Circuit Diagrams.
+
+        **Intro to Arduino Programming (1 hour):**  Arduino Create Account Setup, C++ Programming, Compile and Upload, Challenges.
+
+        **Lunch (30 min):** Usually lunch is scheduled around 12:30/45, but sometimes the food arrives later. Break whenever you need to - You can just continue where you left off.
+
+        **Present Problem + Brainstorm (30 min):** Alarm System, Show Material Lists.
+
+        **Break into Project Teams (2 hour):** Wire the system, upload the exisiting code, and craft a disguise.
+
+        **DEMOS + Closing (30 min)** Share outcomes, Next steps, Learning outcomes, Wrap-up.
+
+
+        <br>
+        #Materials + Special Requirements
+
+        * Learners will need an email address to create a free Arduino Create account.
+        * For 12 teens
+          * 6 boards + USB
+          * 12 Jump wires per board
+          * 2 resistors per board
+          * 6 buttons
+          * 6 LED’s
+          * 3 motion sensors - Ultrasonic Range Finder (HC-SR04)
+          * 3 buzzers
+          * 3 battery pack - 9V Battery + power cord
+          * Paper bags, Markers, tape, crafting materials to decorate 
+
+
+        <br>
+        #Contingency
+
+        If you do not have access to the internet, use the following modifications:
+
+        * Copy over learner files onto all computers (link on Welcome slide).
+        * Ensure that [Arduino Software](https://www.arduino.cc/en/Main/Software) is installed on all computers.
+        * Skip working with the Registry.
+        * Spend more time sharing projects. Have learners bring their laptops to the front to share on the projector.
+        * Please remind learners to save often!
+
+
+        <br>
+        #Notes:
+
+        **Introductions (Slide 3):**
+        
+        Have mentors stand up and introduce themselves with their name and pronouns.
+
+        Have learners introduce themselves to their table groups and answer an icebreaker question, for example: "If you could travel anywhere in the world, where would you want to go?"
+
+        **Arduino (Slide 12):**
+        
+        This board contains a microcontroller which is able to be programmed to sense and control objects in the physical world. By responding to sensors and inputs, the Arduino is able to interact with a large array of outputs such as LEDs, motors and displays.
+        
+        Because of it’s flexibility and low cost, Arduino has become a very popular choice for makers and makerspaces looking to create interactive hardware projects. 
+
+        **(Slide 13):**
+        
+        Clockwise,
+
+        * LilyPad is designed to be easily sewn into e-textiles and wearable projects
+        * Arduino Pro Mini is made for small form factor projects
+        * Arduino Uno is the most popular with just enough features to create anything
+        * Arduino Due is much more powerful with lesser power consumption
+        * Arduino Pro Micro is even smaller
+
+        **(Slide 14):**
+        
+        Ledgend,
+
+        * 1 - Reset Button – This will restart any code that is loaded to the Arduino board.
+        * 3 & 14 - Ground Pin – There are a few ground pins on the Arduino and they all work the same.
+        * 4 & 12 & 13 - Digital Input/Output – Pins 0-13 can be used for digital input or output.
+        * 6 - USB Connection – Used for powering up your Arduino and uploading sketches.
+        * 7 - TX/RX – Transmit and receive data indication LEDs.
+        * 8 - ATmega Microcontroller – This is the brains and is where the programs are stored.
+        * 9 - Power LED Indicator – This LED lights up anytime the board is plugged in a power source.
+        * 11 - DC Power Barrel Jack – This is used for powering your Arduino with a power supply.
+
+        **(Slide 22):**
+
+        * Switch, Lightbulb, Battery, eletron flow counterclockwise
+        * Schematics may be complicated and taunting
+
+        **(slide 69):** Treat the Take-Home Exercise as a stretch goal if you have any time remaining.
+       </script>
+    </section>
+
+
+  </main><!-- cls main section -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Grabs all the .snippet elements
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
