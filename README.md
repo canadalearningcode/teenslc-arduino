@@ -5,7 +5,7 @@
 
 ## Quick Links
 
-Instructor Notes: (in progress)
+Instructor Notes: https://ladieslearningcode.github.io/teenslc-arduino/notes-en.html
 
 Preview Slides: https://ladieslearningcode.github.io/teenslc-arduino/slides-en.html
 
