@@ -6,9 +6,9 @@
 
 ## Quick Links
 
-Preview Slides: https://ladieslearningcode.github.io/update-link-here/slides-en.html
+Preview Slides: https://ladieslearningcode.github.io/teenslc-arduino/slides-en.html
 
-Preview Instructor Notes: https://ladieslearningcode.github.io/update-link-here/notes-en.html
+Preview Instructor Notes: https://ladieslearningcode.github.io/teenslc-arduino/notes-en.html
 
 
 # HOW TO USE:
