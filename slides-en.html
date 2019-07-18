@@ -16,6 +16,33 @@
   <!-- opens all links in a new window -->
   <base target="_blank">
 
+  <style type="text/css">
+    .number-circle {
+      border-radius: 50%;
+      behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+      width: 15px;
+      height: 15px;
+      padding: 8px;
+
+      background: red;
+      border: 2px solid red;
+      color: white;
+      text-align: center;
+
+      font: 20px Arial, sans-serif;
+    }
+
+    .important-bg {
+      padding: 8px;
+
+      background: red;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
 <!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
 <body class="en" data-duration="360">
 
@@ -46,7 +73,7 @@
 
       <div class="instructions">
         <h2>Download<br> & Install</h2>
-          <p>Learner files (zip file): <a href="https://github.com/ladieslearningcode/teenslc-arduino/archive/master.zip">bit.ly/teenslc-arduino</a>
+          <p>Learner files (zip file): <a href="update-link-here.zip">bit.ly/update-link-here</a>
             <ul>
               <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
               <li>open <em>slides-en.html</em> in the browser to view the slides</li>
@@ -75,14 +102,14 @@
         <li><a href="https://twitter.com/search?q=%23teenslearningcode&src=typd">#teenslearningcode</a></li>
       </ul>
 
-      <!-- FILL IN INSTRUCTOR DETAILS -->
+      <!-- FILL IN INSTRUCTOR DETAILS
       <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
       <h2><span class="cursive">with</span> Instructor Name</h2>
       <ul>
         <li><a href="mailto:">hello@email.com</a></li>
         <li><a href="http://website.com">website.com</a></li>
         <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul>
+      </ul>-->
 
       <div class="sponsor">
         <!--<p>In partnership with<br> <img src="framework/img/logo-white.svg" alt="name"></p>-->
@@ -243,7 +270,7 @@
 
         ![A schematic with a battery on the left connected to a lightbulb on the right with a switch up top with the eletron flow going counterclockwise](framework/img/workshop/tlc-schematic-of-electron-flow.gif)
 
-        Circuit diagrams or schematics demonstrates the design of the electrical system.
+        Circuit diagrams or schematics demonstrate the design of the electrical system.
 
         ![A complex schematic example](framework/img/workshop/tlc-schematic-complicated.gif)
       </script>
@@ -254,9 +281,9 @@
       <script type="text/template">
         # Eletrical Circuit Diagrams
 
-        Fortunately, the maker space has becoming very easy to adapt.
+        Fortunately, the maker space has become very easy to adapt.
 
-        Sources such as [Fritzing.org](http://fritzing.org) creates easy to understand electronic design tool for everyone.
+        Sources such as [Fritzing.org](http://fritzing.org) create easy to understand electronic design tools for everyone.
 
         ![A schematic example done by Fritzing.org](framework/img/workshop/tlc-fritzing-example.png)
       </script>
@@ -291,8 +318,8 @@
         # Let’s Power Up the Arduino
 
         1. Plug in your Arduino Uno board to your computer using the USB to computer cord.
-        1. Make sure your computer recognize the device.
-        1. What colour is the power light when the board on?
+        1. Make sure your computer recognizes the device.
+        1. What colour is the power light when the board is on?
       </script>
     </section>
 
@@ -303,11 +330,13 @@
 
         Breadboard is used for quick prototyping and to avoid permanent soldering.
 
-        The holes are called, **tie points** which is a plastic housing with metal clips that are connected with each other by strips of conductive materials.
+        The holes are called **tie points** which is a plastic housing with metal clips that are connected with each other by strips of conductive materials.
 
         The numbering helps to identify which pin is being connected on the Arduino board.
 
-        ![Left, top view of a breadboard; right, inside view of a breadboard with metal bars across each row](framework/img/workshop/tlc-breadboard-inside.jpg)
+        ![Left, top view of a breadboard; right, inside view of a breadboard with metal bars across each row](framework/img/workshop/tlc-breadboard-inside.jpg)<!-- .element: width="70%" -->
+
+        **Note**: Left, top view of a breadboard; right, inside view of a breadboard with metal bars across each row
 
         Fun Fact:
 
@@ -320,7 +349,7 @@
       <script type="text/template">
         # Jumper Wires
 
-        To power the breadboard, we use the jumper wires to form circuit by connecting various components together.
+        To power the breadboard, we use the jumper wires to form a circuit by connecting various components together.
 
         ![Jumper wires in various colours plugged into a breadboard](framework/img/workshop/tlc-jumper-wires.jpg)
 
@@ -334,11 +363,11 @@
         # Resistors
 
         * ![Resistors in various colours](framework/img/workshop/tlc-resistors.png)
-        * Resistors are electronic components which have a specific, never-changing electrical resistance. The resistor's resistance limits the flow of electrons through a circuit.  Resistor is measured in ohms Ω.
+        * Resistance is the limit on the flow of electrons through a circuit. Resistors are the electronic components which have a specific, never-changing electrical resistance to help reduce or stop the circuit’s flow. Resistance is measured in ohm’s Ω.
 
 
-        * ![A diagram explaingin what each colour means based on its location](framework/img/workshop/tlc-resistor-color-codes.png)
-        * Each colour on the resistor band represent a number which indicate their level of resistance.
+        * ![A diagram explaining what each colour means based on its location](framework/img/workshop/tlc-resistor-color-codes.png)
+        * Each colour on the resistor band represents a number which indicates their level of resistance.
       </script>
     </section>
 
@@ -347,7 +376,9 @@
       <script type="text/template">
         # Output
 
-        Output is a gateway where power or information leaves a system.
+        Output is a gateway where energy or information leaves a system.
+
+        **Examples**:
 
         LED lights are the simplest output source for an electrical system.
 
@@ -362,7 +393,8 @@
 <!--Slide 25-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
-        # Follow this Circuit Diagram
+        #Let's Practice!
+        ## Follow this Circuit Diagram
 
         ![Circuit Challenge #1](framework/img/workshop/tlc-circuit-challenge-1.png)
       </script>
@@ -374,6 +406,8 @@
         # Input
 
         Input is a gateway where energy or information enters the system.
+
+        **Examples**:
 
         * Buttons and Switches
           * Maintained (on/off) switches.
@@ -390,7 +424,7 @@
 
         * Sensors are also popular input sources.
           * They are devices that detect and respond to some type of input from the physical environment.
-          * Example such as object range, motion, moisture, light, heat, and pressure.
+          * Examples such as object range, motion, moisture, light, heat, and pressure.
         * ![A variety of input sensor examples](framework/img/workshop/tlc-various-input-sensors.png)<!-- .element: width="70%" -->
       </script>
     </section>
@@ -398,7 +432,8 @@
 <!--Slide 28-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
-        # Follow this Circuit Diagram
+        #Let's Practice!
+        ## Follow this Circuit Diagram
 
         ![Circuit Challenge #2](framework/img/workshop/tlc-circuit-challenge-2.png)
       </script>
@@ -417,9 +452,9 @@
         # Arduino Sketch
 
         * So far,
-          * We’ve created a circuit with our hardware, not it’s time to program the board to recognize our setup.
+          * We’ve created a circuit with our hardware, now it’s time to program the board to recognize our setup.
           * Arduino understands **sketch** which is a set of instructions that tells the board what to do.
-          * An Arduino board only understand one sketch at a time.
+          * An Arduino board only understands one sketch at a time.
         * ![An interface of the Arduino Sketch](framework/img/workshop/tlc-arduino-sketch-example.png)
       </script>
     </section>
@@ -656,6 +691,8 @@
 
         In C/C++ programming, `if` statement is the simplest form of flow control branching.
 
+        ![A flowchart explaining the `if` statement with an example of if hungry find snack, or else keep programming](framework/img/workshop/tlc-flow-control.png)
+
         More reading in Statement and Flow Control, [http://www.cplusplus.com/doc/tutorial/control/](http://www.cplusplus.com/doc/tutorial/control/).
 
         **Question**: Can you program the Arduino to _turn off_ the LED light when button is not pressed?
@@ -742,6 +779,17 @@
       </script>
     </section>
 
+<!--Slide 53.1-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Challenge Time
+
+        * Challenge #1 - Can we make our code more efficient?
+        * Challenge #2 - Can we keep the light off on one button press?
+        * Challenge #3 - Can we change our circuit to turn on the light on button press instead?
+      </script>
+    </section>
+
 <!--Slide 53-->
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -780,12 +828,14 @@
 <!--Slide 56-->
     <section class="slide" data-toc data-markdown>
       <script type="text/template">
-        # We now know,
+        # We now know...
 
-        * Arduino and different types of boards,<!-- .element: class="delayed" -->
-        * Create circuits with a power supply, a breadboard, jumper wires, a resistor, and an output source,<!-- .element: class="delayed" -->
-        * Using input source to trigger on and off of the system,<!-- .element: class="delayed" -->
-        * Arduino Programming!<!-- .element: class="delayed" -->
+        * Arduino and different types of boards<!-- .element: class="delayed" -->
+        * Create circuits with a power supply, a breadboard, jumper wires, a resistor, and an output source<!-- .element: class="delayed" -->
+        * Using input source to trigger on and off of the system<!-- .element: class="delayed" -->
+        * Arduino programming!<!-- .element: class="delayed" -->
+
+        ![Victory dance](framework/img/workshop/tlc-we-now-know-dance.gif)<!-- .element: class="delayed" -->
       </script>
     </section>
 
@@ -807,6 +857,9 @@
 <!--Slide 59-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
+        # 5 Minutes
+        Partner with your neighbour(s) and brainstorm ideas and solutions.
+
         ![Idea time](framework/img/workshop/tlc-idea-time.gif)
       </script>
     </section>
@@ -941,14 +994,14 @@
         <li><a href="https://twitter.com/search?q=%23teenslearningcode&src=typd">#teenslearningcode</a></li>
       </ul>
 
-      <!-- FILL IN INSTRUCTOR DETAILS -->
+      <!-- FILL IN INSTRUCTOR DETAILS
       <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
       <h2><span class="cursive">with</span> Instructor Name</h2>
       <ul>
         <li><a href="mailto:">hello@email.com</a></li>
         <li><a href="http://website.com">website.com</a></li>
         <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul>
+      </ul>-->
 
       <p class="attribution">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
     </section>

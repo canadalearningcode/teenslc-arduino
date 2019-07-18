@@ -1,13 +1,47 @@
-# [TESTING]
+# NOT YET AVAILABLE TO CHAPTERS
 
-# Teens Learning Code
-# Intro to Hardware with Arduino
+## English: (Scroll down for French)
+
+# Teens Learning Code: Intro to Hardware with Arduino
 
 ## Quick Links
 
-Instructor Notes: https://ladieslearningcode.github.io/teenslc-arduino/notes-en.html
+Lead Instructor Notes: (in progress)
 
-Preview Slides: https://ladieslearningcode.github.io/teenslc-arduino/slides-en.html
+Preview Slides: [https://ladieslearningcode.github.io/update-link-here/slides-en.html](https://ladieslearningcode.github.io/update-link-here/slides-en.html)
+
+Preview Instructor Notes: [https://ladieslearningcode.github.io/update-link-here/notes-en.html](https://ladieslearningcode.github.io/update-link-here/notes-en.html)
+
+
+# HOW TO USE:
+## Before the Workshop
+1 Week to Go
+
+* Download this folder.
+* Read through the Lead Instructor Notes for context
+
+2-3 Days to Go
+
+* Go through the slides to practice building your own project
+
+<!--
+* Update the slides (in a text editor, like <a href="https://atom.io/">atom.io</a>):
+  * Insert the network info (Slide 1 and 25)
+  * Edit the Agenda to adjust timing and/or activities, if applicable (Slide 5)
+  * Replace the Example Project URL, if applicable (Slide 10)
+-->
+1 Day to Go
+
+* Print the Notes, or have them accessible on your phone. <!--and Solution Sheet(s) (found in Activity List) to bring to the workshop.-->
+
+## During the Workshop
+* Have the Notes accessible throughout the workshop, follow along in the Notes for support.
+* Use the slides to support the Kick-Off and Introduction.
+
+## After the Workshop
+* Give yourself a pat on the back - You did it!
+* (Don't forget to return any equipment that you borrowed)
+
 
 ## ATTRIBUTIONS:
 
@@ -28,3 +62,5 @@ Here’s an easy way to attribute content back to us - please include it whereve
 ## Contributing
 
 Our general Rule of Thumb is that it's okay to add examples if you feel it could provide more context for your community. However, we ask that instructors do not remove anything, as the content is designed with intention, whether that be meeting specific learning objectives, or maintaining our organization’s culture through the design.  Any suggestions for revisions or updates can be submitted in Github via issues and pull requests. If submitting an issue, please include the slide number(s) in the title.
+
+## French: (coming)
