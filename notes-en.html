@@ -86,6 +86,12 @@
 
         Have learners introduce themselves to their table groups and answer an icebreaker question, for example: "If you could travel anywhere in the world, where would you want to go?"
 
+        **Arduino (Slide 11):**
+
+        Allow the learners to go ahead and open up arduino boxes and take a look
+
+        * What does it look like?
+
         **Arduino (Slide 12):**
 
         This board contains a microcontroller which is able to be programmed to sense and control objects in the physical world. By responding to sensors and inputs, the Arduino is able to interact with a large array of outputs such as LEDs, motors and displays.
@@ -115,10 +121,48 @@
         * 9 - Power LED Indicator – This LED lights up anytime the board is plugged in a power source.
         * 11 - DC Power Barrel Jack – This is used for powering your Arduino with a power supply.
 
+        **(Slide 15):**
+
+        Allow time to discuss in pairs.
+
+        * What is a circuit?
+        * What is an example of a circuit? 
+
+        **(Slide 16):**
+
+        What is an electron?
+
+        * They flow through the circuit. The circuit must be closed for them to travel along the path. i.e., a light switch. 
+
+        **(Slide 18):**
+
+        Allow time to discuss in pairs.
+
+        What do I need to build a circuit?
+
+        * Power/battery, output, wires/conductors for electricity to travel on i.e., copper 
+
         **(Slide 22):**
 
         * Switch, Lightbulb, Battery, eletron flow counterclockwise
         * Schematics may be complicated and taunting
+
+        **(Slide 23):**
+
+        Practice calculation with the learners
+
+        * The image indicates 47k ohms
+
+        What is the resistance of the ones we are using? 
+
+        * Answer, 770 ohms; there is a gap before the last band for the tolerance
+
+        **(Slide 24):**
+
+        Can you think of other examples of an Output?
+
+        * Fan, motors, speakers, etc.
+
 
         **(Slide 25):**
 
@@ -126,15 +170,23 @@
 
         Paper print out guidelines, http://blog.fritzing.org/2009/12/02/paper-templates-for-your-breadboard-prototypes/
 
-        **(Slide 26):**
+        **(Slide 28):**
 
         The difference between a maintained and momentary button, "maintained" will keep its state and "momentary" would would not, which would require a mechanism to hold it down.
 
-        **(Slide 28):**
+        **(Slide 30):**
 
         Ask the learners what the outcome of this practice would be and proceed with the challenge.
 
-        **(Slide 35)**
+        Note about getting into the habit of building, taking a video/mini celebration, then taking it apart again. Point out which parts we can leave and which parts we need to remove and add new components to. 
+
+        **(Slide 31):**
+
+        Allow time to debug.
+
+        Tell learners that this circuit won’t light up or do anything yet - we need to give it instructions first.
+
+        **(Slide 36)**
 
         If the learner sign in with a Google account, he/she will need to:
         
@@ -143,30 +195,92 @@
         * Click “help”
         * Click “install plugin”
 
-        **(Slide 37)**
+        **(Slide 38)**
+
+        We’ll be working in here.  Look at starter code. Point out what a comment is. 
+
+        **(Slide 40)**
 
         The return type `void` does not return a value.
 
-        **(Slide 45):**
+        **(Slide 41):**
+
+        Point out semicolon - needed at the end of each line of code. 
+
+        We are adding this code to the top of the project - above the setup function. 
+
+        Remember to zoom in on the code for everyone to see.
+
+        **(Slide 41):**
+
+        Check to see if these are the pin numbers we are actually plugged into on our Arduino.
+
+        **(Slide 43):**
+
+        Documentation is an important part of programming. The people who made the C/C++ language set specific rules/parameters. We don’t need to memorize them, we just need to know where to find this info.
 
         Walkthrough on how to read an official documentation provided by Arduino using the provided links.
 
-        **(Slide 53.1):**
+        **(Slide 47):**
+
+        Pseudocode = What does our program need to know?
+
+        Emphasize the human instructions in the previous slide.
+
+        1. Is the button pressed?
+        1. If so, turn on light.
+        1. If not, turn off. 
+
+        **(Slide 49):**
+
+        Point out curly brackets - indicates nesting. 
+
+        * TIP: Type in both curly brackets at the same time to make sure we don’t forget one, then space them out to add code.
+
+        Why do we indent code? To organize it, to indicate flow. 
+
+        **(Slide 51):**
+
+        What does else mean/do? It tells the program what to do for all other scenarios.
+
+        **(Slide 53):**
+
+        Make a mistake on purpose to show what an error looks like.
+
+        **(Slide 56):**
 
         * Ask the mentors to put colour stickies on the learners laptops to indicate which challenge they decided to take on.
         * They each have 10 minutes to come up with the solution.
         * 5 minutes to share their solution with their neighbour(s)
         * Regroup to go over the final solutions and discuss as a group on what are some differences
 
-        **(Slide 59):**
+        **(Slide 62):**
 
         Discuss industry connections with the ideas came up by the learners.
 
-        **(Slide 64):**
+        **(Slide 65):**
+
+        Point out materials we haven’t used yet. 
+
+        * What is an ultrasonic range finder? A: sensor. Shoots out a radio wave and measures how long it takes for it to bounce back.
+
+        **(Slide 66):**
+
+        Reviewing and setting up range sensor.  Remind to program it with the three step process to program on [Slide 52](slides-en.html#slide52)
+
+        Video on how to wire the buzzer, https://www.youtube.com/watch?v=K8AnlUT0ng0
+
+        **(Slide 67):**
+
+        Challenge the learners to figure out the code by only providing them with the pseudocode.
+
+        Mention answer will be provided later [(Slide 72)](slides-en.html#slide72), so don't worry.
+
+        **(Slide 68):**
 
         Encourage individual group ownership of the project on how they decorate or disguise the device.  The example given is an anti-lunch-burglar system.  Some other exaples could be a dog house, watch owl, or even a robot butler.
 
-        **(Slide 67):**
+        **(Slide 71):**
 
         Demo in a science fair style
 
@@ -174,11 +288,7 @@
         * Switch in 15-20 min (time to tour 4 other groups)
         * Regroup on findings and ask if the learners still have questions
 
-        **(Slide 68):**
-
-        Video on how to wire the buzzer, https://www.youtube.com/watch?v=K8AnlUT0ng0
-
-        **(Slide 69):**
+        **(Slide 75):**
 
         Treat the Take-Home Exercise as a stretch goal if you have any time remaining.
        </script>
