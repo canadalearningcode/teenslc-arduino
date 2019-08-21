@@ -363,7 +363,7 @@
         # Resistors
 
         * ![Resistors in various colours](framework/img/workshop/tlc-resistors.png)
-        * Resistance is the limit on the flow of electrons through a circuit. Resistors are the electronic components which have a specific, never-changing electrical resistance to help reduce or stop the circuit’s flow. Resistance is measured in ohm’s Ω.
+        * Resistance is the limit on the flow of electrons through a circuit. Resistors are the electronic components which have a specific, never-changing electrical resistance to help reduce or stop the circuit’s flow. Resistance is measured in ohm(s) Ω.
 
 
         * ![A diagram explaining what each colour means based on its location](framework/img/workshop/tlc-resistor-color-codes.png)
@@ -393,7 +393,7 @@
 <!--Slide 25-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
-        #Let's Practice!
+        # Let's Practice!
         ## Follow this Circuit Diagram
 
         ![Circuit Challenge #1](framework/img/workshop/tlc-circuit-challenge-1.png)
@@ -401,6 +401,26 @@
     </section>
 
 <!--Slide 26-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Let's Practice!
+        ## Can we make it light up?
+
+        ![Man light up candles with magic](framework/img/workshop/tlc-let-there-be-light.gif)
+      </script>
+    </section>
+
+<!--Slide 27-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Let's Practice!
+        ## Give it power, 5V of it!
+
+        ![Circuit Challenge #1 Answer](framework/img/workshop/tlc-circuit-challenge-1-ans.png)
+      </script>
+    </section>
+
+<!--Slide 28-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Input
@@ -417,7 +437,7 @@
       </script>
     </section>
 
-<!--Slide 27-->
+<!--Slide 29-->
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
         # Input
@@ -429,37 +449,56 @@
       </script>
     </section>
 
-<!--Slide 28-->
+<!--Slide 30-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
-        #Let's Practice!
+        # Let's Practice!
         ## Follow this Circuit Diagram
 
         ![Circuit Challenge #2](framework/img/workshop/tlc-circuit-challenge-2.png)
       </script>
     </section>
 
-<!--Slide 29-->
+<!--Slide 31-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Let's Practice!
+        ## Does it light up?
+
+        * Have you check
+          * power source?
+          * ground power connection?
+          * i/o port connection?
+          * wires lined up?
+          * +/- in the right places?
+          * hardware Gremlins? ![Hardware Gremlin Emoji](framework/img/workshop/tlc-hardware-gremlin.png)<!-- .element: width="5%" -->![Hardware Gremlin Emoji](framework/img/workshop/tlc-hardware-gremlin.png)<!-- .element: width="5%" -->![Hardware Gremlin Emoji](framework/img/workshop/tlc-hardware-gremlin.png)<!-- .element: width="5%" -->![Hardware Gremlin Emoji](framework/img/workshop/tlc-hardware-gremlin.png)<!-- .element: width="5%" -->
+            * working LED?
+            * working resistor?
+            * working button?
+      </script>
+    </section>
+
+<!--Slide 32-->
     <section class="slide title" data-toc data-markdown>
       <script type="text/template">
         # Arduino Programming
       </script>
     </section>
 
-<!--Slide 30-->
+<!--Slide 33-->
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
         # Arduino Sketch
 
         * So far,
           * We’ve created a circuit with our hardware, now it’s time to program the board to recognize our setup.
-          * Arduino understands **sketch** which is a set of instructions that tells the board what to do.
+          * Arduino understands **sketch** which is a set of instructions in C/C++ that tells the board what to do.
           * An Arduino board only understands one sketch at a time.
         * ![An interface of the Arduino Sketch](framework/img/workshop/tlc-arduino-sketch-example.png)
       </script>
     </section>
 
-<!--Slide 31-->
+<!--Slide 34-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Arduino Software
@@ -472,7 +511,7 @@
       </script>
     </section>
 
-<!--Slide 32-->
+<!--Slide 35-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Arduino Web Editor
@@ -485,7 +524,7 @@
       </script>
     </section>
 
-<!--Slide 33-->
+<!--Slide 36-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Set Up An Arduino Create Account
@@ -496,7 +535,7 @@
       </script>
     </section>
 
-<!--Slide 34-->
+<!--Slide 37-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Set Up An Arduino Create Account
@@ -507,7 +546,7 @@
       </script>
     </section>
 
-<!--Slide 35-->
+<!--Slide 38-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Set Up An Arduino Create Account
@@ -522,14 +561,14 @@
       </script>
     </section>
 
-<!--Slide 36-->
+<!--Slide 39-->
     <section class="slide title" data-toc data-markdown>
       <script type="text/template">
         # Let’s Program Arduino!
       </script>
     </section>
 
-<!--Slide 37-->
+<!--Slide 40-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # C/C++ Programming
@@ -544,13 +583,13 @@
         }
         ```
 
-        `setup()` is a function with the return type as `void`, which means it does not return a value.  When you reset your Arduino or boot it up, the code within the setup function will run.
+        `setup()` is a function.  When you reset your Arduino or boot it up, the code within the setup function will run.
 
-        `loop()` is a loop function that will repeat itself, also with the return type as `void`.  Once the setup function is completed, the loop function will run over and over until the power is off.
+        `loop()` is a loop function that will repeat itself.  Once the setup function is completed, the loop function will run over and over until the power is off.
       </script>
     </section>
 
-<!--Slide 38-->
+<!--Slide 41-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Pin Assignment
@@ -567,7 +606,7 @@
       </script>
     </section>
 
-<!--Slide 39-->
+<!--Slide 42-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Pin Assignment - Complete
@@ -580,7 +619,7 @@
       </script>
     </section>
 
-<!--Slide 40-->
+<!--Slide 43-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # setup()
@@ -593,7 +632,7 @@
       </script>
     </section>
 
-<!--Slide 41-->
+<!--Slide 44-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # setup() - Complete
@@ -614,7 +653,7 @@
       </script>
     </section>
 
-<!--Slide 42-->
+<!--Slide 45-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # loop()
@@ -625,7 +664,7 @@
       </script>
     </section>
 
-<!--Slide 43-->
+<!--Slide 46-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # loop() - Human Instructions
@@ -636,7 +675,7 @@
       </script>
     </section>
 
-<!--Slide 44-->
+<!--Slide 47-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # loop() - Pseudocode
@@ -659,7 +698,7 @@
       </script>
     </section>
 
-<!--Slide 45-->
+<!--Slide 48-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # loop() - Read from Button pin
@@ -675,7 +714,7 @@
       </script>
     </section>
 
-<!--Slide 46-->
+<!--Slide 49-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # loop() - Turn On the LED light
@@ -699,7 +738,7 @@
       </script>
     </section>
 
-<!--Slide 47-->
+<!--Slide 50-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # loop() - Turn Off the LED light
@@ -718,7 +757,7 @@
       </script>
     </section>
 
-<!--Slide 48-->
+<!--Slide 51-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # loop() - if…else…
@@ -737,18 +776,23 @@
       </script>
     </section>
 
-<!--Slide 49-->
+<!--Slide 52-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # We're Ready for Action!
 
         Now that we’ve completed both the `setup()` function and `loop()` function, we are ready to compile our code and upload it to the Arduino board.
 
+        * We learned the three step process to program
+          1. Define the variable with proper port number
+          1. Tell Arduino what it is, input or output
+          1. Program the input or output
+
         Let’s plug in our boards!
       </script>
     </section>
 
-<!--Slide 50-->
+<!--Slide 53-->
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
         # Compile Our Code
@@ -758,7 +802,7 @@
       </script>
     </section>
 
-<!--Slide 51-->
+<!--Slide 54-->
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
         # Upload Our Code
@@ -768,7 +812,7 @@
       </script>
     </section>
 
-<!--Slide 52-->
+<!--Slide 55-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
         # #LIT
@@ -779,7 +823,7 @@
       </script>
     </section>
 
-<!--Slide 53.1-->
+<!--Slide 56-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Challenge Time
@@ -790,7 +834,7 @@
       </script>
     </section>
 
-<!--Slide 53-->
+<!--Slide 57-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Challenge #1
@@ -798,10 +842,12 @@
         Can we make our code more efficient?
 
         ![Challenge #1 Answer](framework/img/workshop/tlc-challenge-1-ans.png)<!-- .element: class="delayed" -->
+
+        [http://bit.ly/teenslc-arduino-challenge-1](http://bit.ly/teenslc-arduino-challenge-1)<!-- .element: class="delayed" -->
       </script>
     </section>
 
-<!--Slide 54-->
+<!--Slide 58-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Challenge #2
@@ -809,10 +855,12 @@
         Can we keep the light off on one button press?
 
         ![Challenge #2 Answer](framework/img/workshop/tlc-challenge-2-ans.png)<!-- .element: class="delayed" -->
+        
+        [http://bit.ly/teenslc-arduino-challenge-2](http://bit.ly/teenslc-arduino-challenge-2)<!-- .element: class="delayed" -->
       </script>
     </section>
 
-<!--Slide 55-->
+<!--Slide 59-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Challenge #3
@@ -821,11 +869,11 @@
 
         <p>Important: Power OFF your Arduino board first.</p><!-- .element: class="important-bg" -->
 
-        ![Challenge #3 Answer](framework/img/workshop/tlc-challenge-3-ans.png)<!-- .element: class="delayed" width="50%" -->
+        ![Challenge #3 Answer](framework/img/workshop/tlc-challenge-3-ans.png)<!-- .element: class="delayed" -->
       </script>
     </section>
 
-<!--Slide 56-->
+<!--Slide 60-->
     <section class="slide" data-toc data-markdown>
       <script type="text/template">
         # We now know...
@@ -839,14 +887,14 @@
       </script>
     </section>
 
-<!--Slide 57-->
+<!--Slide 61-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         # Lunch Time
       </script>
     </section>
 
-<!--Slide 58-->
+<!--Slide 62-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         # Problem of the Day
@@ -854,7 +902,7 @@
       </script>
     </section>
 
-<!--Slide 59-->
+<!--Slide 63-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
         # 5 Minutes
@@ -864,7 +912,7 @@
       </script>
     </section>
 
-<!--Slide 60-->
+<!--Slide 64-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
         # Alarm System
@@ -875,7 +923,7 @@
       </script>
     </section>
 
-<!--Slide 61-->
+<!--Slide 65-->
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
         # Materials - Hardware
@@ -892,17 +940,42 @@
       </script>
     </section>
 
-<!--Slide 62-->
-    <section class="slide two-col-list" data-markdown>
+<!--Slide 66 -->
+    <section class="slide centered" data-markdown>
       <script type="text/template">
-        # Materials - Code
+        # Materials - Circuit Diagram
 
-        * [http://bit.ly/clc-ardurino-alarm](http://bit.ly/clc-ardurino-alarm)
-        * ![LED, Battery Power, Ultrasonic Range Finder, Buzzer](framework/img/workshop/tlc-alarm-system-code.png)
+        ![Final Challenge answer as a circuit diagram](framework/img/workshop/tlc-alarm-system-circuit-diagram.png)
+
+        * Remember, do your checks on [Slide 31](slides-en.html#slide31).
       </script>
     </section>
 
-<!--Slide 63-->
+<!-- Slide 67 -->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Materials - Pseudocode
+
+        ```c++
+        // Read from input pin(s)
+        // Read from output pin(s)
+
+        // If the sensor pin is triggered
+          // turn on the LED light
+          // sound the buzzer
+        // Else
+          // turn off the LED light
+          // turn off the buzzer
+        ```
+
+        * Remember the three step process to program
+          1. Define the variable with proper port number
+          1. Tell Arduino what it is, input or output
+          1. Program the input or output
+      </script>
+    </section>
+
+<!--Slide 68-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Final Challenge
@@ -922,37 +995,38 @@
       </script>
     </section>
 
-<!--Slide 64-->
+<!--Slide 69-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         # 10 Minutes!
       </script>
     </section>
 
-<!--Slide 65-->
+<!--Slide 70-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         # Time's Up!
       </script>
     </section>
 
-<!--Slide 66-->
+<!--Slide 71-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         # Demo Time
       </script>
     </section>
 
-<!--Slide 67 -->
-    <section class="slide centered" data-markdown>
+<!--Slide 72-->
+    <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-        # Final Challenge - Circuit Diagram
+        # Final Challenge - Code
 
-        ![Final Challenge answer as a circuit diagram](framework/img/workshop/tlc-alarm-system-circuit-diagram.png)
+        * [http://bit.ly/teenslc-arduino-alarm](http://bit.ly/teenslc-arduino-alarm)
+        * ![LED, Battery Power, Ultrasonic Range Finder, Buzzer](framework/img/workshop/tlc-alarm-system-code.png)
       </script>
     </section>
 
-<!--Slide 56-->
+<!--Slide 73-->
     <section class="slide" data-toc data-markdown>
       <script type="text/template">
         # Today I Learned...
@@ -967,7 +1041,21 @@
       </script>
     </section>
 
-<!--Slide 56-->
+<!--Slide 74-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Before you go..
+
+        1. Let's reset our Arduino by pressing the <strong>reset</strong> button for three seconds
+        1. Let's disassemble our breadboards
+        1. Let's return the parts to our materials table
+        1. Let's help one and other to clean up
+
+        Wait, there's more..
+      </script>
+    </section>
+
+<!--Slide 74-->
     <section class="slide" data-toc data-markdown>
       <script type="text/template">
         # Next Steps
