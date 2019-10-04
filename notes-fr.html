@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Canada en programmation</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S’occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Durée / barre de progression : définissez la durée de la présentation avec « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+
+
+  <main>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        ##Notes de la formatrice
+
+        ##Ados en programmation : Introduction au matériel informatique avec Arduino
+        <br>
+
+        #Horaire
+
+        **Introduction (30 minutes) :** Introduction, Ordre du jour, Code des programmeuses, Qu'est-ce que le code, Projet du jour
+
+        **Intro au matériel (1 heure) :** Qu'est-ce qu’Arduino, Circuits, Matériel informatique, Schémas électriques
+
+        **Intro à la programmation avec Arduino (1 heure) :**  Créer un compte Arduino Create, Programmation C++, Compiler et téléverser, Exercices
+
+        **Dîner (30 minutes) :** Habituellement, nous dînons à 12 h 30-45, mais les repas arrivent parfois plus tard. Faites une pause au besoin. Reprenez le cours au même endroit.
+
+        **Présentation du problème et remue-méninges (30 minutes) :** Système d’alarme, Listes de matériel
+
+        **Formation des équipes pour le projet (2 heures) :** Brancher le système, téléverser le code et créer un « déguisement ».
+
+        **DÉMONSTRATIONS + Conclusion (30 minutes)** Présenter les résultats, les prochaines étapes et les notions apprises. Discours de fin.
+
+
+        <br>
+        #Matériel + exigences particulières
+
+        * Les apprenantes auront besoin d’une adresse courriel pour créer un compte Arduino Create gratuit.
+        * Matériel nécessaire pour 12 ados :
+          * 6 Arduino Unos + USB
+          * 6 montages expérimentaux (breadboards)
+          * 12 fils volants par carte
+          * 2 résistances par carte
+          * 6 boutons
+          * 6 DEL
+          * 3 capteurs de mouvement, télémètre à ultrasons (HC-SR04)
+          * 3 bruiteurs
+          * 3 bloc-piles, pile de 9 V + cordon d’alimentation
+          * Sacs en papier, marqueurs, ruban adhésif, matériel de bricolage (pour le « déguisement » du système d'alarme)
+        * Papillons adhésifs colorés pour indiquer le défi relevé par les apprenantes
+
+
+        <br>
+        #Plan d’urgence
+
+        Si vous n'avez pas accès à Internet, suivez ces étapes :
+
+        * Copiez les fichiers d’apprentissage sur tous les ordinateurs (lien sur la diapositive de bienvenue).
+        * Assurez-vous que le [logiciel Arduino](https://www.arduino.cc/en/Main/Software) est installé sur tous les ordinateurs.
+        * Ne travaillez pas avec le registre / la documentation.
+        * Passez plus de temps à présenter les projets. Demandez aux apprenantes de venir à l'avant avec leur ordinateur portable pour le brancher au projecteur.
+        * Rappelez aux apprenantes de sauvegarder leur code souvent!
+
+
+        <br>
+        #Remarques :
+
+        **Présentations (diapositive 3) :**
+
+        Demandez l’équipe de mentors de se lever et de se présenter (noms et pronoms).
+
+        Demandez aux apprenantes de se présenter à leur table et de répondre à une question brise-glace, par exemple : « Si vous pouviez aller n’importe où dans le monde, où iriez-vous? »
+
+        **Arduino (diapositive 11) :**
+
+        Laissez les apprenantes découvrir le contenu des boîtes d'Arduino.
+
+        * À quoi ressemble Arduino?
+
+        **Arduino (diapositive 12) :**
+
+        La carte contient un microcontrôleur, qui peut être programmé pour capter et contrôler des objets dans l'environnement physique. Pour répondre aux entrées et aux objets captés, Arduino peut faire appel à différents types de sorties comme des ampoules DEL, des moteurs et des écrans.
+
+        Grâce à sa flexibilité et à son faible coût, Arduino est un incontournable pour les ateliers de fabrication collaboratifs. Il s'agit d'une carte idéale pour les utilisateurs souhaitant réaliser des projets interactifs avec du matériel.
+
+        **(Diapositive 13) :**
+
+        Dans le sens des aiguilles d’une montre :
+
+        * La carte LilyPad est conçue pour être cousue à des textiles électroniques. Elle s'intègre facilement à des projets de technologie vestimentaire.
+        * L’Arduino Pro Mini une carte idéale pour réaliser des projets compacts.
+        * L’Arduino Uno est la carte la plus populaire, car elle comprend assez de fonctions pour la plupart des projets.
+        * L’Arduino Due est une carte d’une grande puissance qui ne consomme pas beaucoup d’énergie.
+        * L’Arduino Pro Micro est une très petite carte.
+
+        **(Diapositive 14) :**
+
+        Légende :
+
+        * 1 - Bouton de réinitialisation – Ce bouton réinitialise le code chargé sur la carte Arduino.
+        * 3 et 14 - Broche de mise à la terre – Il y a quelques broches de mise à la terre sur Arduino. Leur fonctionnement est identique.
+        * 4, 12 et 13 - Entrée/sortie numérique – Les broches numérotées de 0 à 13 servent à l'entrée ou à la sortie numérique.
+        * 6 - Connexion USB – Ce fil est utilisé pour alimenter la carte Arduino et téléverser des sketchs.
+        * 7 - Transmission (TX) / Réception (RX) – Ces voyants DEL indiquent la transmission et la réception des données.
+        * 8 - Microcontrôleur ATmega  – Il s'agit du « cerveau » de la carte et de l'endroit où les programmes sont enregistrés.
+        * 9 - Voyant DEL de mise en marche – Cette ampoule DEL s'allume chaque fois que la carte est branchée à une source d'alimentation.
+        * 11 - Connecteur coaxial, courant continu – Ce connecteur sert à alimenter la carte Arduino avec un bloc d'alimentation (électricité).
+
+        **(Diapositive 15) :**
+
+        Accordez aux apprenantes quelques minutes pour discuter en équipe de deux.
+
+        * Qu'est-ce qu’un circuit?
+        * Pouvez-vous donner un exemple de circuit?
+
+        **(Diapositive 16) :**
+
+        Qu'est-ce qu’un électron?
+
+        * Les électrons sont un courant électrique qui se déplace dans le circuit. Le circuit doit être fermé afin que les électrons puissent se déplacer. On peut fermer un circuit en utilisant, par exemple, un interrupteur.
+
+        **(Diapositive 18) :**
+
+        Accordez aux apprenantes quelques minutes pour discuter en équipe de deux.
+
+        De quoi ai-je besoin pour créer un circuit?
+
+        * Source d’alimentation/pile, sortie, fils et conducteurs pour aider l’électricité à circuler (p. ex., cuivre).
+
+        **(Diapositive 22) :**
+
+        * Interrupteur, ampoule, pile, flux des électrons dans le sens contraire des aiguilles d’une montre
+        * Les schémas sont parfois complexes et intimidants.
+
+        **(Diapositive 23) :**
+
+        Exercez-vous à faire des calculs avec les apprenantes.
+
+        * L’image indique 47 000 ohms.
+
+        Quelle est la résistance des nôtres?
+
+        * Réponse : 770 ohms. Il y a un trou avant la dernière bande pour la tolérance.
+
+        **(Diapositive 24) :**
+
+        Avez-vous d’autres exemples de sorties?
+
+        * Ventilateur, moteur, hautparleur, etc.
+
+
+        **(Diapositive 25) :**
+
+        Demandez aux apprenantes si elles ont une idée du résultat. Poursuivez avec le défi.
+
+        Imprimez les directives : http://blog.fritzing.org/2009/12/02/paper-templates-for-your-breadboard-prototypes/
+
+        **(Diapositive 28) :**
+
+        La différence entre un bouton maintenu et un bouton momentané : un bouton maintenu <i>maintient</i> son état tandis qu’un bouton momentané n'est actif qu'au <i>moment</i> où il est pressé et a besoin d’un mécanisme pour le garder en place.
+
+        **(Diapositive 30) :**
+
+        Demandez aux apprenantes si elles ont une idée du résultat. Poursuivez avec le défi.
+
+        Remarque : Prenez l’habitude de créer quelque chose, de filmer une vidéo du résultat ou de célébrer votre réussite et de démonter votre création. Indiquez les parties qui peuvent rester sur le montage ou qui peuvent être enlevées et les nouvelles composantes à ajouter.
+
+        **(Diapositive 31) :**
+
+        Accordez aux apprenantes quelques minutes pour déboguer.
+
+        Dites-leur que ce circuit ne fera aucune action (p. ex., allumer une ampoule) tant que nous ne lui donnerons pas d’instructions.
+
+        **(Diapositive 36) :**
+
+        Si les apprenantes se connectent avec leur compte Google, elles devront suivre les étapes suivantes :
+
+        * Cliquez sur « Create a new sketch ». Une barre vous dira d’installer l'extension.
+        * Cliquez sur « Help ».
+        * Cliquez sur « Install plug-in » pour installer l'extension.
+
+        **(Diapositive 38) :**
+
+        Voici notre environnement de travail.  Regardez le code de départ. Expliquez l’utilité des commentaires.
+
+        **(Diapositive 40) :**
+
+        Le type `void` ne retourne pas de valeur.
+
+        **(Diapositive 41) :**
+
+        Faites remarquer le point-virgule aux apprenantes. Il doit se trouver à la fin de chaque ligne de code.
+
+        Nous ajouterons ce code au début du projet, en haut de la fonction setup.
+
+        N’oubliez pas de faire un zoom avant afin que tout le monde puisse voir le code.
+
+        **(Diapositive 41) :**
+
+        Vérifiez si les nombres des broches correspondent bien aux branchements sur la carte Arduino.
+
+        **(Diapositive 43) :**
+
+        La documentation est une partie importante de la programmation. Les personnes qui ont créé le langage C/C++ ont défini des règles et des paramètres bien précis. Nous n'avons pas besoin de les mémoriser; il nous suffit de savoir où trouver les informations.
+
+        Montrez comment lire la documentation officielle d'Arduino, qui se trouve aux adresses indiquées.
+
+        **(Diapositive 47) :**
+
+        Pseudo-code = Ce que notre programme doit savoir
+
+        Mettez l'accent sur les instructions pour les humains dans la diapositive précédente.
+
+        1. Le bouton est-il pressé?
+        1. Si oui, la lumière s'allume.
+        1. Sinon, la lumière s'éteint.
+
+        **(Diapositive 49) :**
+
+        Montrez les parenthèses, qui représentent du code imbriqué.
+
+        * CONSEIL : Tapez les deux parenthèses en même temps afin de ne pas les oublier, puis espacez-les et ajoutez du code.
+
+        À quoi sert l’indentation du code? <br>Réponse : À organiser le code et à en montrer le flux.
+
+        **(Diapositive 51) :**
+
+        Que veut dire « else »? Si nous utilisons cette expression, que se passe-t-il? <br>Réponse : « else » veut dire « sinon ». Il s'agit d’une expression disant au programme quoi faire dans une autre situation.
+
+        **(Diapositive 53) :**
+
+        Faites une erreur délibérément pour montrer le résultat.
+
+        **(Diapositive 56) :**
+
+        * Demandez aux mentores de mettre des papillons adhésifs sur les ordinateurs des apprenantes pour indiquer le défi qu'elles réalisent.
+        * Elles auront 10 minutes pour trouver une solution.
+        * Ensuite, elles auront 5 minutes pour discuter de leur solution avec leurs voisines.
+        * Revenez en groupe pour regarder les solutions et discutez des différences.
+
+        **(Diapositive 62) :**
+
+        En fonction des idées des apprenantes, faites des liens concrets avec des applications dans la vraie vie.
+
+        **(Diapositive 65) :**
+
+        Faites remarquer à la classe qu’il y a du matériel que nous n'avons pas utilisé.
+
+        * Qu'est-ce qu’un télémètre à ultrasons? Réponse : Il s'agit d’un capteur qui envoie une onde radio et mesure le temps de renvoi de l’onde pour détecter la proximité et le mouvement.
+
+        **(Diapositive 66) :**
+
+        Regardez les notions et mettez en place le télémètre.  Dites au groupe de le programmer selon le processus à trois étapes indiqué sur la [diapositive 52](diapositives.html#slide52).
+
+        Vidéo sur le branchement du bruiteur : https://www.youtube.com/watch?v=K8AnlUT0ng0
+
+        **(Diapositive 67) :**
+
+        Mettez les apprenantes au défi d’écrire le code seulement en regardant le pseudo-code.
+
+        N’oubliez pas de leur dire que nous verrons la solution plus tard. Elles n’ont donc pas à s’inquiéter si elles ne trouvent pas la solution. [(diapositive 72)](diapositives.html#slide72)
+
+        **(Diapositive 68) :**
+
+        Encouragez les groupes à décorer ou à déguiser leur appareil à leur goût.  Dans l'exemple, nous avons vu un système d’alarme antivoleur de dîner.  Les apprenantes pourraient personnaliser leur système d'alarme en niche, en hibou de surveillance ou même en robot domestique. Elles ont carte blanche!
+
+        **(Diapositive 71) :**
+
+        Faites une démonstration des projets dans une exposition du style « expo-sciences ».
+
+        * Dans chaque équipe de 4, 2 personnes feront la démonstration de leur projet à leur table et 2 autres se déplaceront dans le local pour voir les projets des autres.
+        * Inversez les rôles après 15-20 minutes de démonstration (assez de temps pour voir le projet de 4 autres groupes).
+        * Revenez en groupe pour parler de vos découvertes et vérifiez si les apprenantes ont des questions.
+
+        **(Diapositive 75) :**
+
+        S’il reste du temps, faites l'exercice maison durant l'atelier comme prolongement.
+       </script>
+    </section>
+
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>

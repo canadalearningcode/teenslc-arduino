@@ -1,6 +1,11 @@
-# NOT YET AVAILABLE TO CHAPTERS
-
 ## English: (Scroll down for French)
+# This content is featured in a monthly theme!
+
+In 2019, we want to challenge Canadians to pause and think, learn about, share, and work towards solving issues that affect us all on a global scale – while leveraging the power of technology!  More information on monthly themes [here](https://www.canadalearningcode.ca/code-can-change-the-world/).
+
+DECEMBER'S THEME IS: Take Action!
+
+See slide 8 for suggestions on how learners can incorporate this month’s theme into their projects.
 
 # Teens Learning Code: Intro to Hardware with Arduino
 
@@ -16,25 +21,20 @@ Preview Instructor Notes: https://ladieslearningcode.github.io/teenslc-arduino/n
 1 Week to Go
 
 * Download this folder.
-* Read through the Lead Instructor Notes for context
+* Read through the Instructor Notes for context
 
 2-3 Days to Go
 
 * Go through the slides to practice building your own project
 
-<!--
-* Update the slides (in a text editor, like <a href="https://atom.io/">atom.io</a>):
-  * Insert the network info (Slide 1 and 25)
-  * Edit the Agenda to adjust timing and/or activities, if applicable (Slide 5)
-  * Replace the Example Project URL, if applicable (Slide 10)
--->
 1 Day to Go
 
-* Print the Notes, or have them accessible on your phone. <!--and Solution Sheet(s) (found in Activity List) to bring to the workshop.-->
+* Update the slides (in a text editor, like <a href="https://atom.io/">atom.io</a>):
+  * Insert the network info
+* Print the Notes, or have them accessible on your phone.
 
 ## During the Workshop
-* Have the Notes accessible throughout the workshop, follow along in the Notes for support.
-* Use the slides to support the Kick-Off and Introduction.
+* Have the Notes accessible throughout the workshop.
 
 ## After the Workshop
 * Give yourself a pat on the back - You did it!
@@ -61,4 +61,65 @@ Here’s an easy way to attribute content back to us - please include it whereve
 
 Our general Rule of Thumb is that it's okay to add examples if you feel it could provide more context for your community. However, we ask that instructors do not remove anything, as the content is designed with intention, whether that be meeting specific learning objectives, or maintaining our organization’s culture through the design.  Any suggestions for revisions or updates can be submitted in Github via issues and pull requests. If submitting an issue, please include the slide number(s) in the title.
 
-## French: (coming)
+## Français
+# Ce contenu fait partie d'une thématique mensuelle!
+
+En 2019, nous encourageons la population du Canada à réfléchir, à apprendre, à partager et à collaborer pour résoudre des problèmes qui affectent toute la planète à l'aide de la technologie! Vous trouverez plus d'informations sur les thématiques mensuelles en consultant notre [site](https://www.canadalearningcode.ca/monthly-themes/).
+
+Le thème du mois de décembre : Agissons!
+
+Consultez la diapositive n° 8 pour donner à votre groupe des idées pour intégrer le thème à leur projet. Les apprenantes ont le choix d'intégrer le thème à leur projet ou non.
+
+# Ados en programmation : Introduction au matériel informatique avec Arduino
+
+## Liens rapides
+
+Aperçu des diapositives : https://ladieslearningcode.github.io/teenslc-arduino/slides-fr.html
+
+Aperçu des notes : https://ladieslearningcode.github.io/teenslc-arduino/notes-fr.html
+
+
+# PRÉPARATION
+## Avant l'atelier
+Une semaine avant l’événement
+
+* Téléchargez ce dossier.
+* Lisez les notes de la formatrice pour avoir plus de contexte.
+
+Deux ou trois jours avant l’événement
+
+* Lisez les diapositives et suivez les étapes pour créer votre propre projet.
+
+Un jour avant l’événement
+
+* Mettez à jour les diapositives (dans un éditeur de texte, comme <a href="https://atom.io/">atom.io</a>).
+  * Indiquez les informations sur le Wi-Fi
+* Imprimez les notes ou mettez-les sur votre téléphone.
+
+## Durant l’atelier
+* Ayez les notes à portée de main pendant tout l'atelier et suivez-les pour obtenir du soutien pendant votre enseignement.
+
+## Après l’atelier
+* Applaudissez-vous : vous avez réussi!
+* (N’oubliez pas de remettre l’équipement que vous avez emprunté.)
+
+
+## ATTRIBUTIONS :
+
+Contenu créé par Sherry Yang pour Canada en programmation.
+
+Diapositives créées par Christina Truong pour Canada en programmation.
+
+Envoyez vos questions et vos commentaires par courriel à l'adresse [content@canadalearningcode.ca](mailto:content@canadalearningcode.ca).
+
+Si vous souhaitez contribuer au développement de contenu pour les leçons, utilisez ce [formulaire](https://docs.google.com/forms/d/e/1FAIpQLSfJ8NSMKVAmzpdn3EAymxCbDDz3XZPxyDdmtQ87GECuvXzzDQ/viewform).
+
+Nous sommes ravis que d'autres personnes et organismes utilisent notre contenu avec leurs apprenants. C'est pourquoi nous l'avons créé spécialement pour le partage et l'utilisation avec attributions, conformément à la licence [Creative Commons (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+
+Nous vous invitons à ajouter ce petit passage aux endroits où vous citez ou utilisez notre contenu afin de faire référence à notre organisme et lier notre site Web :
+
+« Bien que cet événement ne soit pas affilié à Canada en programmation, nous reconnaissons que l'organisme a créé le contenu [LIEN VERS LE CONTENU GITHUB] et que nous l'utilisons conformément à la licence Creative Commons. »
+
+## Contribution
+
+En général, vous avez le droit d'ajouter des exemples si vous jugez qu'ils soutiennent l'apprentissage de votre groupe d'apprenants. Toutefois, nous demandons aux formatrices de ne pas supprimer de contenu, car chaque élément a sa raison d'être. Par exemple, le contenu sert à atteindre un objectif d'apprentissage précis et la conception graphique reflète la culture de notre organisme.  Si vous avez des suggestions ou croyez qu'un certain contenu doit être modifié, soumettez vos commentaires par Github (problèmes (issues) ou demandes de retrait (pull requests)). Si vous soumettez un problème, veuillez inclure le numéro des diapositives dans le titre.
